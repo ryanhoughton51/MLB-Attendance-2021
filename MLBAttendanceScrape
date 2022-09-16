@@ -1,0 +1,7 @@
+import pandas as pd
+
+df = pd.read_html('https://www.espn.com/mlb/attendance/_/year/2021')
+df2 = pd.read_html('https://www.infoplease.com/math-science/weather/climate-of-100-selected-us-cities')
+#print(df2)
+df[0].to_csv('teams.csv', index= False)
+df2[0].to_csv('weather.csv', index= False)
