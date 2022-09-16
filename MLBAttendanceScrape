@@ -1,3 +1,5 @@
+#Python script used to scrape data off of the web
+
 import pandas as pd
 
 df = pd.read_html('https://www.espn.com/mlb/attendance/_/year/2021')
